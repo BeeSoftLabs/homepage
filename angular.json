@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "fsn"
+  "defaultProject": "fsn",
+  "cli": {
+    "analytics": "8cd4e33d-9d1c-4ca3-9ff9-1425d3653571"
+  }
 }
