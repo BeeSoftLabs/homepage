@@ -124,8 +124,16 @@
               "devServerTarget": "web:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "web"
+    }
+  },
+  "defaultProject": "web",
+  "cli": {
+    "analytics": "29fe1336-6a07-4469-801e-2bd7db884a06"
+  }
 }
