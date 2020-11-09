@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng deploy web --base-href https://beesoftlabs.github.io/homepage/"
+    "deploy": "ng deploy web --base-href https://beesoftlabs.github.io/homepage/  --repo=https://github.com/beesoftlabs/homepage.git --name=obrero --email=deploy@beesoftlabs.dev"
   },
   "private": true,
   "dependencies": {
