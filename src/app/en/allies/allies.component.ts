@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { UiService } from '@app/ui';
 
 @Component({
   template: `
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
     </p>
   `,
 })
-export class AlliesComponent {}
+export class AlliesComponent implements OnInit {
+  constructor(private readonly ui: UiService) {}
+
+  public ngOnInit(): void {
+    this.ui.setMetaData({ title: 'Allies' });
+  }
+}
