@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { UiService } from '@app/ui';
 
 @Component({
   template: `
     <p>
-      en/donationes
+      en/donations
     </p>
   `,
 })
-export class DonationsComponent {}
+export class DonationsComponent implements OnInit {
+  constructor(private readonly ui: UiService) {}
+
+  public ngOnInit(): void {
+    this.ui.setMetaData({ title: 'Donations' });
+  }
+}
