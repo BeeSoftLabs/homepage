@@ -3,21 +3,22 @@ import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './ui/layout/layout.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'inicio',
+  },
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
       {
-        path: "",
-        pathMatch: "full",
-        redirectTo: "inicio"
+        path: 'inicio',
+        loadChildren: () =>
+          import('./pages/pages.module').then((m) => m.PagesModule),
       },
-      {
-        path: "",
-        component: LayoutComponent,
-        children: [
-        {
-          path: "inicio",
-          loadChildren: () => import('./pages/pages.module').then((m) => m.PagesModule)
-        }
-      ]
-      }
+    ],
+  },
 ];
 
 @NgModule({
