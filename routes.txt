@@ -1,0 +1,12 @@
+en/home
+en/apply-now
+en/about-us
+en/allies
+en/sponsors
+en/donations
+es/inicio
+es/aplica-ahora
+es/nosotros
+es/aliados
+es/patrocinadores
+es/donaciones
