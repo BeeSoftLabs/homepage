@@ -1,17 +1,20 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 /* You can add global styles to this file, and also import other style files */
-@use "~inter-ui/default" with (
-  $inter-font-display: swap,
-  $inter-font-path: '~inter-ui/Inter (web)'
-);
-@use "~inter-ui/variable" with (
-  $inter-font-display: swap,
-  $inter-font-path: '~inter-ui/Inter (web)'
-);
-@include default.all;
-@include variable.all;
+// @use "~inter-ui/default" with (
+//   $inter-font-display: swap,
+//   $inter-font-path: '~inter-ui/Inter (web)'
+// );
+// @use "~inter-ui/variable" with (
+//   $inter-font-display: swap,
+//   $inter-font-path: '~inter-ui/Inter (web)'
+// );
+// @include default.all;
+// @include variable.all;
 
-html { font-family: "Inter", "system-ui"; }
+// html { font-family: "Inter", "system-ui"; }
 
-@supports (font-variation-settings: normal) {
-  html { font-family: "Inter var", "system-ui"; }
-}
+// @supports (font-variation-settings: normal) {
+//   html { font-family: "Inter var", "system-ui"; }
+// }

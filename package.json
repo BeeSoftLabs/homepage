@@ -25,6 +25,7 @@
     "@angular/platform-browser-dynamic": "~10.2.0",
     "@angular/platform-server": "~10.2.0",
     "@angular/router": "~10.2.0",
+    "@ngneat/tailwind": "^1.0.8",
     "@nguniversal/express-engine": "^10.1.0",
     "express": "^4.15.2",
     "inter-ui": "^3.15.0",
@@ -33,6 +34,7 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
+    "@angular-builders/custom-webpack": "10.0.1",
     "@angular-devkit/build-angular": "~0.1002.0",
     "@angular/cli": "~10.2.0",
     "@angular/compiler-cli": "~10.2.0",
@@ -50,7 +52,12 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "postcss": "8.1.7",
+    "postcss-import": "13.0.0",
+    "postcss-loader": "4.0.4",
+    "postcss-scss": "3.0.4",
     "protractor": "~7.0.0",
+    "tailwindcss": "1.9.6",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.2"
