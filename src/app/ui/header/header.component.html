@@ -1,0 +1,23 @@
+<div class="relative bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div
+      class="flex justify-between items-center py-6 md:justify-start md:space-x-10"
+    >
+      <div class="lg:w-0 lg:flex-1">
+        <a [routerLink]="'/' + lang" class="flex">
+          <img
+            class="h-8 w-auto sm:h-10"
+            src="/assets/logo.png"
+            alt="beesoftlabs logo"
+          />
+        </a>
+      </div>
+
+      <ng-container *ngFor="let link of links">
+        <a routerLinkActive="font-bold" [routerLink]="link.path">{{
+          link.label
+        }}</a>
+      </ng-container>
+    </div>
+  </div>
+</div>
