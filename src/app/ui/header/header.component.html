@@ -13,10 +13,16 @@
         </a>
       </div>
 
-      <ng-container *ngFor="let link of links">
-        <a routerLinkActive="font-bold" [routerLink]="link.path">{{
-          link.label
-        }}</a>
+      <ng-container *ngFor="let link of links; let last = last">
+        <a
+          routerLinkActive="font-bold"
+          [class.bg-gradient-to-r]="last"
+          [class.from-purple-700]="last"
+          [class.to-pink-600]="last"
+          [class.text-gradient]="last"
+          [routerLink]="link.path"
+          >{{ link.label }}</a
+        >
       </ng-container>
     </div>
   </div>
