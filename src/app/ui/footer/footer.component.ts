@@ -10,7 +10,7 @@ import { Component, Input } from '@angular/core';
             <img src="/assets/Polygon_2.png" class="text-white p-2 rounded-full transform rotate-45">
             <p class="text-xl m-0">BeeSoft Labs</p>
           </a>
-         <p [innerHTML]="text" class="text-lg font-medium text-gray-500 pl-20"></p>
+         <p [innerHTML]="text" class="text-lg font-medium text-gray-500 pl-5"></p>
           <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a class="text-gray-500" href="https://www.facebook.com/beesoftlabs">
               <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
