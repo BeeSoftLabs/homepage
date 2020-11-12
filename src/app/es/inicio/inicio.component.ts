@@ -2,11 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UiService } from '@app/ui';
 
 @Component({
-  template: `
-    <p>
-      es/inicio
-    </p>
-  `,
+  templateUrl: './inicio.component.html',
 })
 export class InicioComponent implements OnInit {
   constructor(private readonly ui: UiService) {}
