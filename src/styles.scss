@@ -18,3 +18,9 @@
 // @supports (font-variation-settings: normal) {
 //   html { font-family: "Inter var", "system-ui"; }
 // }
+@layer utilities {
+  .text-gradient {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

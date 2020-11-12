@@ -5,7 +5,7 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-layout',
   template: `
-    <app-header [links]="links$ | async"></app-header>
+    <app-header [lang]="lang$ | async" [links]="links$ | async"></app-header>
     <router-outlet></router-outlet>
     <app-footer [text]="footerText$ | async"></app-footer>
     <app-lang-switcher [lang]="lang$ | async"></app-lang-switcher>
