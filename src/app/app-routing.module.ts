@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { LayoutComponent } from './ui/layout/layout.component';
 
-const footerText = 'BeeSoft Labs &copy; 2020';
+const footerText = '&copy;2020 BeeSoft Labs ';
 
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'es' },
