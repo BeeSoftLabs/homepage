@@ -1,7 +1,7 @@
-import { Routes } from '@angular/router';
-import { LayoutComponent } from './ui/layout/layout.component';
+import { Routes } from '@angular/router'
+import { LayoutComponent } from './ui/layout/layout.component'
 
-const footerText = '&copy;2020';
+const footerText = '&copy;2020'
 
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'es' },
@@ -23,8 +23,7 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () =>
-          import('./en/en-routing.module').then((m) => m.EnRoutingModule),
+        loadChildren: () => import('./en/en-routing.module').then((m) => m.EnRoutingModule),
       },
     ],
   },
@@ -46,9 +45,8 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () =>
-          import('./es/es-routing.module').then((m) => m.EsRoutingModule),
+        loadChildren: () => import('./es/es-routing.module').then((m) => m.EsRoutingModule),
       },
     ],
   },
-];
+]
