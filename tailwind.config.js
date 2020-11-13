@@ -8,5 +8,11 @@ module.exports = (isProd) => ({
       enabled: isProd,
       content: ['**/*.html', '**/*.ts']
     },
-    theme: {}
+    theme: {
+        fontFamily: {
+          display: ['Inter', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+          sans: ['Inter', 'sans-serif'],
+        }
+    }
 });
