@@ -1,2 +1,2 @@
-export * from './ui.module';
-export * from './ui.service';
+export * from './ui.module'
+export * from './ui.service'
