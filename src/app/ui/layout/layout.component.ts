@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { map } from 'rxjs/operators';
+import { Component } from '@angular/core'
+import { ActivatedRoute } from '@angular/router'
+import { map } from 'rxjs/operators'
 
 @Component({
   selector: 'app-layout',
@@ -11,10 +11,8 @@ import { map } from 'rxjs/operators';
   `,
 })
 export class LayoutComponent {
-  public readonly footerText$ = this.route.data.pipe(
-    map((res) => res.footerText)
-  );
-  public readonly links$ = this.route.data.pipe(map((res) => res.links));
-  public readonly lang$ = this.route.data.pipe(map((res) => res.lang));
+  public readonly footerText$ = this.route.data.pipe(map((res) => res.footerText))
+  public readonly links$ = this.route.data.pipe(map((res) => res.links))
+  public readonly lang$ = this.route.data.pipe(map((res) => res.lang))
   constructor(private readonly route: ActivatedRoute) {}
 }
