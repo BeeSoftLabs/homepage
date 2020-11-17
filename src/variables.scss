@@ -1,0 +1,19 @@
+:root {
+  --orange-color: #ff5b4f;
+  --bg-orange-color-gradient: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(90deg, #ff4d52, #f9cb28) border-box;
+}
+/* Mixins */
+@mixin orange-yellow-gradient {
+  color: black;
+  border: 3px solid transparent;
+  background: var(--bg-orange-color-gradient);
+}
+
+.text-orange {
+  color: var(--orange-color);
+}
+
+.border-orange-gradient {
+  @include orange-yellow-gradient;
+}
