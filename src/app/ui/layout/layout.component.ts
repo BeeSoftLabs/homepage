@@ -5,9 +5,11 @@ import { map } from 'rxjs/operators'
 @Component({
   selector: 'app-layout',
   template: `
-    <div class="flex flex-col h-screen justify-between flex-grow">
+    <div class="flex flex-col h-screen justify-between">
       <app-header [lang]="lang$ | async" [links]="links$ | async"></app-header>
-      <router-outlet></router-outlet>
+      <div class="flex-grow">
+        <router-outlet></router-outlet>
+      </div>
       <app-footer [text]="footerText$ | async"></app-footer>
     </div>
   `,
