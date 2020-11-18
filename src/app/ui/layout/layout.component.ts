@@ -5,7 +5,7 @@ import { map } from 'rxjs/operators'
 @Component({
   selector: 'app-layout',
   template: `
-    <div class="flex flex-col h-screen justify-between">
+    <div class="flex flex-col h-screen justify-between flex-grow">
       <app-header [lang]="lang$ | async" [links]="links$ | async"></app-header>
       <router-outlet></router-outlet>
       <app-footer [text]="footerText$ | async"></app-footer>
