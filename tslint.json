@@ -36,7 +36,7 @@
     "object-literal-key-quotes": [true, "as-needed"],
     "quotemark": [true, "single"],
     "semicolon": {
-      "options": ["always"]
+      "options": ["never"]
     },
     "space-before-function-paren": {
       "options": {
