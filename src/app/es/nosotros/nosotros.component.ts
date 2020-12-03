@@ -7,12 +7,12 @@ import { UiService } from '@app/ui'
 export class NosotrosComponent implements OnInit {
   constructor(private readonly ui: UiService) {}
 
-  // tslint:disable-next-line: no-any
-  team: Array<any> = [
-    { name: 'Lorem ipsum', position: 'Mentor' },
-    { name: 'Lorem ipsum', position: 'CEO' },
-    { name: 'Lorem ipsum', position: 'Staff' },
-    { name: 'Lorem ipsum', position: 'Volunteer' },
+  team: { name: string; position: string; avatarUrl: string }[] = [
+    { name: 'Bram Borggreve', position: 'Fundador', avatarUrl: 'assets/team/beeman.png' },
+    { name: 'David Londoño', position: 'Staff', avatarUrl: 'assets/team/david.png' },
+    { name: 'Angel Velez', position: 'Staff', avatarUrl: 'assets/team/angel.png' },
+    { name: 'Arturo Dangond', position: 'Staff', avatarUrl: 'assets/team/arturo.png' },
+    { name: 'Derlys Dominguez', position: 'Staff', avatarUrl: 'assets/team/derlys.png' },
   ]
 
   public ngOnInit(): void {

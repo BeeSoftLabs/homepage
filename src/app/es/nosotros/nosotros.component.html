@@ -30,30 +30,30 @@
           <img
             alt="profile-photo"
             class="w-32 h-32 mb-2 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-            src="https://dummyimage.com/128x128"
+            [src]="member.avatarUrl"
           />
           <h2 class="text-gray-900 font-semibold title-font text-xl">{{ member.name }}</h2>
           <span
-            ><a class="text-black font-bold text-sm">{{ member.position }}</a> |
-            <a class="text-gray-500 leading-relaxed hover:text-black cursor-pointer">Bio</a></span
-          >
+            ><a class="text-black font-bold text-sm">{{ member.position }}</a>
+            <!--            |-->
+            <!--            <a class="text-gray-500 leading-relaxed hover:text-black cursor-pointer">Bio</a>-->
+          </span>
         </div>
       </div>
     </div>
   </div>
-</section>
 
-<section class="text-gray-700 body-font border-t border-gray-200">
   <div class="container px-5 py-24 mx-auto">
     <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
       <h2 class="flex-grow sm:pr-16 sm:text-2xl md:text-4xl lg:text-5xl font-extrabold title-font text-black">
         Únete a nuestro equipo de voluntarios
       </h2>
-      <button
+      <a
         class="flex-shrink-0 font-bold py-2 px-8 focus:outline-none border-orange-gradient rounded-lg text-lg mt-10 sm:mt-0"
+        routerLink="/es/aplica-ahora"
       >
         Más info.
-      </button>
+      </a>
     </div>
   </div>
 </section>
