@@ -30,6 +30,7 @@ module.exports = (isProd) => ({
     },
     extend: {
       width: {
+        71: '20rem',
         65: '17rem',
         98: '28rem',
         '1/7': '14.2857143%',
