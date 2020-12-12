@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router'
   imports: [
     RouterModule.forChild([
       { path: '', pathMatch: 'full', redirectTo: 'inicio' },
+
       {
         path: '',
         children: [
@@ -14,7 +15,19 @@ import { RouterModule } from '@angular/router'
           },
           {
             path: 'aplica-ahora',
-            loadChildren: () => import('./aplica-ahora/aplica-ahora.module').then((m) => m.AplicaAhoraModule),
+            children: [
+              {
+                path: '',
+                loadChildren: () => import('./aplica-ahora/aplica-ahora.module').then((m) => m.AplicaAhoraModule),
+              },
+              {
+                path: 'estudiante',
+                loadChildren: () =>
+                  import('./aplica-ahora-estudiante/aplica-ahora-estudiante.module').then(
+                    (m) => m.AplicaAhoraEstudianteModule,
+                  ),
+              },
+            ],
           },
           {
             path: 'donaciones',
