@@ -1,3 +1,8 @@
+@mixin size-md {
+  width: 150px;
+  height: 150px;
+}
+
 .box-wrapper {
   width: 100px;
   height: 100px;
@@ -16,12 +21,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     img {
       filter: grayscale(100%);
       -webkit-filter: grayscale(100%);
     }
-
     &::before,
     &::after {
       content: '';
@@ -60,4 +63,8 @@
       -webkit-filter: grayscale(0);
     }
   }
+}
+
+.box-wrapper-md {
+  @include size-md();
 }
