@@ -3,6 +3,15 @@
   height: 150px;
 }
 
+@mixin black-white {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  &:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+  }
+}
+
 .box-wrapper {
   width: 100px;
   height: 100px;
@@ -67,4 +76,8 @@
 
 .box-wrapper-md {
   @include size-md();
+}
+
+.black-and-withe {
+  @include black-white();
 }
