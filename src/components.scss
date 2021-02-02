@@ -12,6 +12,7 @@
   }
 }
 
+/* Animation images technologies */
 .box-wrapper {
   width: 100px;
   height: 100px;
@@ -30,10 +31,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     img {
       filter: grayscale(100%);
       -webkit-filter: grayscale(100%);
     }
+
     &::before,
     &::after {
       content: '';
@@ -58,6 +61,7 @@
 
     &:hover {
       border-radius: 50px;
+
       &::before,
       &::after {
         border-radius: 50px;
@@ -67,6 +71,7 @@
 
   &:hover {
     transform: rotateZ(360deg);
+
     img {
       filter: none;
       -webkit-filter: grayscale(0);
@@ -80,4 +85,36 @@
 
 .black-and-withe {
   @include black-white();
+}
+
+@media (max-width: 640px) {
+  .box-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+}
+
+.orange-gradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #ff4d4d, #f9cb28);
+}
+
+.blue-gradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #007cf0, #00dfd8);
+}
+
+.purple-gradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #7928ca, #ff0080);
 }
