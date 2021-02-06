@@ -27,6 +27,11 @@ import { RouterModule } from '@angular/router'
                     (m) => m.AplicaAhoraEstudianteModule,
                   ),
               },
+              {
+                path: 'mentor',
+                loadChildren: () =>
+                  import('./aplica-ahora-mentor/aplica-ahora-mentor.module').then((m) => m.AplicaAhoraMentorModule),
+              },
             ],
           },
           {
