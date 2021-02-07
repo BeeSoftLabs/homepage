@@ -39,6 +39,7 @@ export const routes: Routes = [
         { path: 'nosotros', label: 'Nosotros' },
         { path: 'aliados', label: 'Aliados' },
         { path: 'patrocinadores', label: 'Patrocinadores' },
+        { path: 'faq', label: 'FAQ' },
         { path: 'donaciones', label: 'Donaciones' },
       ],
     },

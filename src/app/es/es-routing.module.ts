@@ -45,6 +45,10 @@ import { RouterModule } from '@angular/router'
             path: 'patrocinadores',
             loadChildren: () => import('./patrocinadores/patrocinadores.module').then((m) => m.PatrocinadoresModule),
           },
+          {
+            path: 'faq',
+            loadChildren: () => import('./faq/faq.module').then((m) => m.FaqModule),
+          },
         ],
       },
     ]),
