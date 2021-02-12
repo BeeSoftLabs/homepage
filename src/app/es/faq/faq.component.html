@@ -1,0 +1,41 @@
+<div class="bg-gray-50">
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
+      <h2 class="text-center text-3xl font-bold text-gray-900 sm:text-4xl">Preguntas frecuentes</h2>
+      <dl class="mt-6 space-y-6 divide-y divide-gray-200 text-gray-900">
+        <ng-container *ngFor="let question of questions">
+          <div class="pt-6">
+            <dt class="text-lg">
+              <button
+                (click)="openQuestion(question.id)"
+                class="text-left w-full flex justify-between items-start text-gray-400"
+              >
+                <span class="font-medium text-gray-900">
+                  {{ question.question }}
+                </span>
+                <span class="ml-6 h-7 flex items-center">
+                  <svg
+                    [ngClass]="{ '-rotate-180': open === question.id }"
+                    class="h-6 w-6 transform"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <ng-container *ngIf="open === question.id">
+              <dd class="mt-2 pr-12">
+                <div class="text-base text-gray-900" [innerHTML]="question.answer"></div>
+              </dd>
+            </ng-container>
+          </div>
+        </ng-container>
+      </dl>
+    </div>
+  </div>
+</div>
