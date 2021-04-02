@@ -1,14 +1,20 @@
 <footer class="w-full bg-gray-200">
-  <div class="container px-5 py-4 mx-auto flex items-center sm:flex-row flex-col">
+  <div class="container px-5 py-4 mx-auto flex justify-center items-center sm:flex-row flex-col">
     <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
       <img class="h-8 w-auto sm:h-10" src="./assets/images/beesoftlabs-logo.svg" alt="beesoftlabs logo" />
-      <img
-        class="h-8 w-3/5 sm:h-10 pt-2 ml-4"
-        src="./assets/images/beesoftlabs-text-logo.svg"
-        alt="beesoftlabs text logo"
-      />
+      <img class="h-8 sm:h-10 pt-2 ml-4" src="./assets/images/beesoftlabs-text-logo.svg" alt="beesoftlabs text logo" />
     </a>
-    <p [innerHTML]="text" class="text-lg font-medium text-gray-500 pt-2"></p>
+    <div class="flex ml-12 items-end lg:ml-auto sm:flex-row">
+      <a
+        target="_blank"
+        class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+        href="https://drive.google.com/drive/folders/1wfsN0Y2PST8ZF3wNxFL2RxCpICMmrmM4?usp=sharing"
+        >Documentos publicos</a
+      >
+    </div>
+    <div class="flex ml-12 items-end lg:ml-auto sm:flex-row">
+      <p [innerHTML]="text" class="text-lg font-medium text-gray-500 pt-2"></p>
+    </div>
     <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
       <a class="text-gray-500" href="https://www.facebook.com/beesoftlabs">
         <svg
